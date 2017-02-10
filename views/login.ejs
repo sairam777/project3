@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Innominds Empployees</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/style.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>    
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="frontMargin">
+ 
+<form method="post" action="/welcome">
+  <div class="imgcontainer">
+    <img src="./images/inno.png" alt="Avatar" class="inno">
+  </div>
+
+   <h1>Employee login</h1>
+
+
+  <div class="container">
+    <label><b>Email or Username</b></label>
+    <input type="text" placeholder="Enter Email or Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#green">
+    <button type="reset" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+     <span class="nuser">New User <a href="/register">Register Here</a></span>
+  </div>
+</form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+{
+    "name": "nodeproject",
+    "version": "0.0.0",
+    "private": true,
+    "engines": {
+        "vscode": "*"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "html",
+            "extensions": [
+                ".html",
+                ".htm",
+                ".shtml",
+                ".mdoc",
+                ".jsp",
+                ".asp",
+                ".aspx",
+                ".jshtm",
+                ".ejs"
+            ],
+            "aliases": [
+                "HTML5",
+                "htm",
+                "html",
+                "xhtml",
+                "ejs"
+            ],
+            "mimetypes": [
+                "text/html",
+                "text/x-jshtm",
+                "text/template",
+                "text/ng-template"
+            ]
+        }],
+        "grammars": [{
+            "scopeName": "text.html.basic",
+            "path": "./syntaxes/HTML.plist"
+        }]
+    },
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "body-parser": "~1.16.0",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.0",
+        "ejs": "^2.5.5",
+        "express": "~4.14.1",
+        "jade": "~1.11.0",
+        "morgan": "~1.7.0",
+        "nodemon": "^1.11.0",
+        "serve-favicon": "~2.3.2"
+    }
+}
