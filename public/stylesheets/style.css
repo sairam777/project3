@@ -7,6 +7,13 @@ frontMargin {
     padding: 50px;
 }
 
+P {
+    text-align: center;
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 h1 {
     color: lightblue;
     text-align: center;
@@ -21,12 +28,20 @@ h2 {
     padding-right: 350px;
 }
 
+h3 {
+    color: orange;
+    font-size: 25px;
+    float: right;
+    padding-right: 350px;
+    margin: 10px;
+}
+
 a {
     color: #00B7FF;
 }
 
 form {
-    border: 3px solid green;
+    border: 0px solid green;
 }
 
 input[type=text],
@@ -61,8 +76,17 @@ button {
     text-align: center;
 }
 
+.mgcontainer {
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
 welcomeimgcontainer {
     float: left;
+}
+
+.welcomebg {
+    background-color: lightslategrey;
 }
 
 img.inno {
@@ -87,6 +111,10 @@ span.nuser {
     padding-right: 50px;
 }
 
+span.ruser {
+    float: right;
+}
+
 
 /* Change styles for span and cancel button on extra small screens */
 
@@ -108,4 +136,65 @@ li {
     color: blue;
     font-size: 15px;
     font-weight: bold;
+}
+
+*[role="form"] {
+    max-width: 530px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: lightgreen;
+    border-radius: 0.3em;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+body,
+html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+}
+
+
+/**
+ * Profile image component
+ */
+
+.profile-header-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-header-img {
+    padding: 20px;
+}
+
+.profile-header-img>img.img-circle {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #51D2B7;
+}
+
+.profile-header {
+    margin-top: 5px;
+}
+
+
+/**
+ * Ranking component
+ */
+
+.rank-label-container {
+    margin-top: -19px;
+    /* z-index: 1000; */
+    text-align: center;
+}
+
+.label.label-default.rank-label {
+    background-color: rgb(81, 210, 183);
+    padding: 5px 10px 5px 10px;
+    border-radius: 27px;
 }

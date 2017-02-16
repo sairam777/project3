@@ -10,39 +10,97 @@
   crossorigin="anonymous"></script>    
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body class="frontMargin">
- 
-<form action="" method="">
-  <div class="imgcontainer">
+<body class="frontregMargin"> 
+
+  <div class="mgcontainer">
     <img src="./images/inno.png" alt="Avatar" class="inno">
+     <h3>Employee Registration Form</h3>
   </div>
-
-   <h1>Employee Registration</h1>
-
-
-  <div class="container">
-    <label><b>Email</b></label>
-    <input type="text" placeholder="Enter Email Address" name="email" required>
-
-    <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
-
-    <label><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="pwd" required>
-
-    <label><b>Confirm Password</b></label>
-    <input type="password" placeholder="Re-Enter Password" name="pwd" required>
-        
-    <button type="submit">Register</button>
     
-  </div>
+     <div class="regcontainer">     
+    
+            <form class="form-horizontal" role="form" method="post" action="/register">            
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="fname" placeholder="First Name" class="form-control" required>
+                        
+                    </div>
+                    <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Last Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="lname" placeholder="Last Name" class="form-control" required>
+                     
+                    </div>
+                  </div>                  
 
-  <div class="container" style="background-color:#green">
-    <button type="reset" value="reset" class="cancelbtn">Clear</button>
- 
-     <span class="nuser">Registred User?<a href="/login">Login Here</a></span>
-  </div>
-</form>
+                <div class="form-group">
+                    <label for="email" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="text" name="email" placeholder="Email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" name="password" placeholder="Password" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-sm-3 control-label">Confirm Password</label>
+                    <div class="col-sm-9">
+                        <input type="password" name="confirmpassword" placeholder="Confirm Password" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+                    <div class="col-sm-9">
+                        <input type="date" name="birthDate" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="country" class="col-sm-3 control-label">Loaction</label>
+                    <div class="col-sm-9">
+                        <select name="location" class="form-control" required>
+                        <option>Select</option>
+                            <option>San Jose(US)</option>
+                            <option>Hyderabad(Waverock)</option>
+                            <option>Hyderabad(Kondapur)</option>
+                             <option>Hyderabad(Mindspace)</option>
+                            <option>Bengaluru</option>
+                            <option>Switzerland</option>
+                            <option>Chennai</option>
+                            <option>Vizag</option>
+                           
+                        </select>
+                    </div>
+                </div> <!-- /.form-group <--></-->
+                <div class="form-group">
+                    <label class="control-label col-sm-3">Gender</label>
+                    <div class="col-sm-6">
+                        <div class="row col-sm-4">                            
+                                <label class="radio-inline" >
+                                    <input type="radio" name="gender" value="Female" required>Female
+                                </label>                            
+                            
+                                <label class="radio-inline">
+                                    <input type="radio" name="gender" value="Male" required >Male
+                                </label>
+                                       
+                        </div>
+                    </div>            
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button type="submit" class="btn btn-primary btn-block">Register</button>
+                    </div>
+                </div>   
+                 <span class="ruser">Already registred <a href="/">Login Here</a></span>      
+               
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
+
+
 
 
 </body>
